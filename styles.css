@@ -1,0 +1,243 @@
+body, html {
+    /*background-image: url("img/background-orange.png");
+    background-size: 70vw;*/
+    background-color: rgb(48, 39, 28);
+    margin: 0;
+}
+
+:root {
+    --color-shadow: rgb(22, 20, 20);
+}
+
+#sign-in-container {
+    position: absolute;
+    left: 15%;
+    top: 5.25%;
+    width: 70%;
+    background-color: rgb(90, 74, 56);
+    border-radius: 5px;
+    box-shadow: 10px 10px var(--color-shadow), 5px 5px var(--color-shadow), 7.5px 7.5px var(--color-shadow), 2.5px 2.5px var(--color-shadow);
+    padding: 1vw;
+}
+
+.person-clickable {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: bisque;
+    font-size: 4vw;
+    margin: 1vw;
+    padding: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.726);
+    height: fit-content;
+    transition-duration: 0.25s;
+    transform: translate(0);
+    user-select: none;
+}
+
+.person-clickable:hover {
+    cursor: pointer;
+    background-color: rgb(66, 34, 15) !important;
+    box-shadow: 8px 8px var(--color-shadow), 5px 5px var(--color-shadow), 7.5px 7.5px var(--color-shadow), 2.5px 2.5px var(--color-shadow);
+    transform: translate(-8px, -8px);
+}
+
+.letter-header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: bisque;
+    font-size: 4vw;
+    margin: 1vw;
+    padding: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 5px;
+    background-color: rgba(128, 120, 120, 0.726);
+    height: fit-content;
+    transition-duration: 0.25s;
+    transform: translate(0);
+    user-select: none;
+    font-weight: bold;
+}
+
+.letter-header:hover {
+    cursor: grab;
+    background-color: rgb(68, 66, 65) !important;
+}
+
+#comfirm-sign-in-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+#comfirm-sign-in {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 40%;
+    height: 60%;
+    background-color: rgb(189, 186, 180);
+    border-radius: 5px;
+}
+
+#confirm-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vw;
+    padding-top: 2vw;
+    text-align: center;
+    color: rgb(39, 36, 32);
+}
+
+#confirm-button-container {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.confirm-button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    width: 30%;
+    font-size: 350%;
+    border-radius: 10px;
+    bottom: 0;
+    padding: 2%;
+    user-select: none;
+    transition: scale 0.25s;
+    color: beige;
+}
+
+.confirm-button:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+#yes-button {
+    background-color: rgb(86, 189, 73);
+}
+
+#no-button {
+    background-color: rgb(185, 77, 77);
+}
+
+#settings {
+    position: fixed;
+    padding: 1vw;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-align: center;
+    font-size: 4vw;
+    border-radius: 10px;
+    margin: 2vw;
+    transition-duration: 0.25s;
+}
+
+#settings:hover {
+    cursor: pointer;
+    background-color: black;
+    scale: 1.2;
+}
+
+#settings-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+#settings-background {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 30%;
+    height: 80%;
+    background-color: rgb(189, 186, 180);
+    border-radius: 5px;
+}
+
+#settings-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vw;
+    padding-top: 2vw;
+    text-align: center;
+    color: rgb(39, 36, 32);
+    text-decoration: underline;
+}
+
+.setting-option {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+    padding: 2vw;
+    text-align: center;
+    color: rgb(39, 36, 32);
+    list-style: none;
+    border-radius: 10px;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.setting-option:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: beige;
+}
+
+#exit-button  {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+    padding: 2vw;
+    text-align: center;
+    color: rgb(39, 36, 32);
+    list-style: none;
+    border-radius: 10px;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+#exit-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.726);;
+    color: beige;
+}
+
+/* Sroll Bar*/
+
+::-webkit-scrollbar {
+    background-color: hsl(235, 24%, 19%);
+    width: 2vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: hsla(220, 3%, 23%, 0.938);
+    box-shadow: 0 0 3px hsl(235, 21%, 11%);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: hsl(235, 21%, 11%);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(220, 98%, 61%);
+  }

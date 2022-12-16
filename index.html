@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign In</title>
+</head>
+
+<body>
+    <div id="sign-in-container">
+    </div>
+    <div id = "settings" onclick="toggleSettings()">⚙️</div>
+    <div id="comfirm-sign-in-container">
+        <div id="comfirm-sign-in">
+            <h1 id="confirm-title">Test</h1>
+            <div id="confirm-button-container">
+                <div class="confirm-button" id="yes-button" onclick="signout(true)">Yes</div>
+                <div class="confirm-button" id="no-button" onclick="signout(false)">No</div>
+            </div>
+        </div>
+    </div>
+    <div id = "settings-container">
+        <div id = "settings-background">
+            <h1 id="settings-title">Settings</h1>
+            <!--<li class = "setting-option" onclick="resetData()">Control Board</li>-->
+            <li class = "setting-option" onclick="resetData()">Reset Data</li>
+            <h1 id="exit-button" onclick="toggleSettings()">Exit</h1>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
